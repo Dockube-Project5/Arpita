@@ -8,7 +8,9 @@ Dockube
 docker build -t <folder-name> .
 ```
 #### Checking if the image is created
+```
 docker images
+```
 #### Running the containerized image
 ```
 docker run -dp <port-name>:<port-name> <image-name>. Check if the image is running on the localhost: localhost:<port-name>
@@ -16,7 +18,9 @@ docker run -dp <port-name>:<port-name> <image-name>. Check if the image is runni
 
 ### Pushing the image on Docker Hub
 #### Login to Docker Hub
+```
 docker login
+```
 #### Tagging the image
 ```
 docker tag <image-name> <dockerhub-username>/<repository-name>:<tag-name>
@@ -28,9 +32,13 @@ docker push <dockerhub-username>/<repository-name>:<tag-name>
   
 ### Deploying the image on Kubernetes
 #### Applying the deployment.yaml file
+```
 kubectl apply -f deployment.yaml
+```
 #### Checking deployments
+```
 kubectl get deployments
+```
 #### Running the deployed image
 ```
 curl http://localhost:<port-name>
