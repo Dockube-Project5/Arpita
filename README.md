@@ -13,7 +13,7 @@ docker images
 ```
 #### Running the containerized image
 ```
-docker run -dp <port-name>:<port-name> <image-name>. Check if the image is running on the localhost: localhost:<port-name>
+docker run -dp <port-name>:<port-name> <image-name>. Check if the image is running on the localhost using  http://localhost:<port-name>
 ```
 
 ### Pushing the image on Docker Hub
