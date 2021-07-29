@@ -4,6 +4,8 @@ Dockube
 ## STEPS REQUIRED FOR DEPLOYING THE IMAGE OF A FLASK APPLICATION ON KUBERNETES
 
 ### Building a Docker image of your flask application
+
+#### Building the image
 ```
 docker build -t <folder-name> .
 ```
